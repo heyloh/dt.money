@@ -1,4 +1,6 @@
+import { AxiosRequestConfig } from "axios";
 import { useEffect, useState } from "react";
+import { api } from "../../services/api";
 import { Container } from "./styles";
 
 interface Transaction {
@@ -13,9 +15,10 @@ interface Transaction {
 export function TransactionsTable() {
   const [transactions, setTransactions] = useState<Array<Transaction>>([]);
   useEffect(() => {
-    fetch('http://localhost:3000/api/transactions')
-      .then(response => response.json())
-      .then(data => setTransactions(data));
+    api.get('transactions')
+      .then((response: AxiosRequestConfig) => {
+        setTransactions(response.data);
+      });
   }, []);
 
   return (
