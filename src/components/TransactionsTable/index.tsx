@@ -13,7 +13,7 @@ interface Transaction {
 }
 
 export function TransactionsTable() {
-  const [transactions, setTransactions] = useState<Array<Transaction>>([]);
+  const [transactions, setTransactions] = useState<Transaction[]>([]);
   useEffect(() => {
     api.get('transactions')
       .then((response: AxiosRequestConfig) => {
