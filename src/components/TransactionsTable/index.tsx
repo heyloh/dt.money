@@ -1,6 +1,5 @@
-import { AxiosRequestConfig } from "axios";
-import { useEffect, useState } from "react";
-import { api } from "../../services/api";
+import { useContext } from "react";
+import { TransactionsContext } from "../../TransactionsContext";
 import { Container } from "./styles";
 
 interface Transaction {
@@ -12,14 +11,9 @@ interface Transaction {
   createdAt: string;
 }
 
+
 export function TransactionsTable() {
-  const [transactions, setTransactions] = useState<Transaction[]>([]);
-  useEffect(() => {
-    api.get('transactions')
-      .then((response: AxiosRequestConfig) => {
-        setTransactions(response.data.transactions);
-      });
-  }, []);
+  const transactions: Transaction[] = useContext(TransactionsContext);
 
   return (
     <Container>
