@@ -4,6 +4,8 @@
   <img src="./.github/assets/logo.svg" />
 </div>
 
+---
+
 ## Sobre
 
 dt.money é um website para gerenciamento de gastos desenvolvido durante as aulas do curso Ignite da Trilha ReactJS da [Rocketseat](https://rocketseat.com.br).
@@ -16,7 +18,7 @@ dt.money é um website para gerenciamento de gastos desenvolvido durante as aula
 
 ![screenshot-2](./.github/assets/screenshot-dtmoney-2.png)
 
-<br />
+---
 
 ## Tecnologias
 
@@ -28,7 +30,7 @@ dt.money é um website para gerenciamento de gastos desenvolvido durante as aula
 - [Polished](https://github.com/styled-components/polished)
 - [React Modal](https://github.com/reactjs/react-modal)
 
-<br />
+---
 
 ## Como executar
 
