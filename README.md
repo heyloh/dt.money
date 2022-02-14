@@ -1,3 +1,5 @@
+<br />
+
 <div align="center">
   <img src="./.github/assets/logo.svg" />
 </div>
@@ -14,6 +16,7 @@ dt.money é um website para gerenciamento de gastos desenvolvido durante as aula
 
 ![screenshot-2](./.github/assets/screenshot-dtmoney-2.png)
 
+<br />
 
 ## Tecnologias
 
